@@ -1,0 +1,13 @@
+header {
+  width: 100%;
+  background-color: gray;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1152px;
+    margin: auto;
+  }
+
+}

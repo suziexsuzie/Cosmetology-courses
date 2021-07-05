@@ -14,6 +14,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@iconify/icons-mdi": "^1.1.15",
+    "@iconify/react": "^1.1.4",
     "gatsby": "^3.6.2",
     "gatsby-plugin-gatsby-cloud": "^2.8.1",
     "gatsby-plugin-image": "^1.8.0",
@@ -22,8 +24,12 @@
     "gatsby-source-datocms": "^2.6.16",
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-sharp": "^3.8.0",
+    "google-map-react": "^2.1.10",
+    "graphql": "^15.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-static-google-map": "^0.8.0",
     "sass": "^1.35.1"
   }
 }
