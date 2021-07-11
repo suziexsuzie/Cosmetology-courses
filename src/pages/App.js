@@ -4,7 +4,9 @@ import ReactDOM from "react-dom";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 
-// function App() {
-//     return (
-//     );
-// }
+ function App() {
+     return null
+};
+
+ export default App;
+

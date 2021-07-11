@@ -1,4 +1,12 @@
 @import "header";
+@import "logo";
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root {
+  --logo-font1: 'Abel', sans-serif;
+  --logo-font2: 'Fjalla One', sans-serif;
+}
 
 body {
   background-color: white;

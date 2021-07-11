@@ -1,5 +1,5 @@
-import React from "react";
 
+import React from "react";
 import Logo from "./Logo";
 import Nav from "./Nav";
 
@@ -10,8 +10,9 @@ const Header = () => {
             <Logo/>
             <Nav/>
             </div>
-        </header>
+       </header>
     )
 };
+
 
 export default Header;

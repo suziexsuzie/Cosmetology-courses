@@ -5,6 +5,7 @@ import {BrowserRouter} from "react-router-dom";
 
 import Header from "../components/Header";
 import Map from "../components/Map";
+import ContactForm from "../components/ContactForm";
 
 // const location = {
 //     address: 'Centrum Szkoleniowe ECLEST',
@@ -14,10 +15,17 @@ import Map from "../components/Map";
 
 function Contact() {
     return (
-        <>
+        <section id="kontakt">
             <Header/>
             {/*<Map location={location} zoomLevel={17} />*/}
-        </>
+            <div className="container">
+                <div class="info">
+                    <ContactForm />
+                </div>
+
+                <Map/>
+            </div>
+        </section>
     )
 }
 

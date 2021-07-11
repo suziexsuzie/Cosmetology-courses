@@ -8,6 +8,17 @@ header {
     width: 80%;
     max-width: 1152px;
     margin: auto;
-  }
+    nav a {
+      padding: 5px;
+      margin: 5px 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: darkblue;
 
+      &:hover {
+        color: deepskyblue;
+      }
+    }
+
+  }
 }
