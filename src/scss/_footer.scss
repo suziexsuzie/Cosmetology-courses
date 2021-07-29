@@ -1,0 +1,17 @@
+footer {
+height: 40px;
+  background-color: var(--main-color);
+  margin-top: 20px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    a {
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: darkblue;
+      }
+    }
+  }
+}

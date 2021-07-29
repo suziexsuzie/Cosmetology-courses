@@ -3,10 +3,12 @@ import {Link} from "gatsby";
 
 const Footer = () => {
     return (
-        <nav>
-        <Link to="/">Strona główna</Link>
+        <footer>
+            <div className="container">
+        <Link to="/">www.EvoMy.pl</Link>
         <Link to="/rodo/">RODO</Link>
-    </nav>
+            </div>
+    </footer>
     )
 };
 

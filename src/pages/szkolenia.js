@@ -1,13 +1,17 @@
 import React from "react";
 import Header from "../components/Header";
+import AboutCourses from "../components/AboutCourses";
+import MakeNew from "../components/CreatePage";
+import Template from "../components/Template";
 
 const Szkolenia = () => {
     return (
-        <>
-            <Header />
-        <div>
-            <h2>szkolenia i ich opisy</h2>
-        </div></>
+
+        <Template>
+
+            <AboutCourses/>
+        </Template>
+
     )
 };
 

@@ -1,13 +1,35 @@
+@import "reset";
 @import "header";
 @import "logo";
+@import "bestsellers";
+@import "contact";
+@import "form";
+@import "aboutcourse";
+@import "onas";
+@import "footer";
+@import "brandinfo";
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
 
 :root {
   --logo-font1: 'Abel', sans-serif;
   --logo-font2: 'Fjalla One', sans-serif;
+  --main-font: "Nunito", sans-serif;
+  --sec-font: "Alegreya Sans", sans-serif;
+  --main-color: #66ccff;
+  --sec-color:  #b3e6ff;
 }
 
 body {
   background-color: white;
+}
+
+.container {
+  width: 80%;
+  min-width: 900px;
+  max-width: 1152px;
+  margin: auto;
 }

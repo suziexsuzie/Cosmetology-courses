@@ -1,20 +1,21 @@
 import * as React from "react"
 
 import "../scss/main.scss";
-import CourseInfo from "../components/CourseInfo";
-import Header from "../components/Header";
 import Bestsellers from "../components/Bestsellers";
+import BrandInfo from "../components/BrandInfo";
+import Template from "../components/Template";
 
 // markup
 const IndexPage = () => {
-  return (
+    return (
 
-    <main>
-        <Header />
-        <Bestsellers />
-      <title>Home Page</title>
-    </main>
-        )
+        <Template>
+            <BrandInfo/>
+            <Bestsellers/>
+            <title>Home Page</title>
+        </Template>
+
+    )
 };
 
 export default IndexPage;

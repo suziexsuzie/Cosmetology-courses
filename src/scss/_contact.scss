@@ -1,0 +1,56 @@
+#kontakt {
+  .container {
+    font-family: var(--main-font);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    letter-spacing: 1px;
+
+    .info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      .contact {
+        max-width: 500px;
+        margin: 0 8px 12px 15px;
+        font-size: 20px;
+        color: darkblue;
+        text-decoration: underline;
+      }
+
+      .address, .phone {
+        margin: 5px 12px 12px 12px;
+        line-height: 20px;
+      }
+
+      .phone {
+        margin-bottom: 20px;
+        font-weight: bolder;
+        color: darkblue;
+      }
+
+      .address::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/placeholder.svg");
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        opacity: 60%;
+      }
+
+      .phone::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/phone-call.svg");
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        opacity: 60%;
+      }
+    }
+  }
+}

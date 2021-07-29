@@ -1,22 +1,23 @@
 header {
   width: 100%;
-  background-color: gray;
+  background-color: var(--main-color);
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    max-width: 1152px;
     margin: auto;
+    padding: 5px 0;
     nav a {
+      font-family: var(--main-font);
+      letter-spacing: 1px;
       padding: 5px;
       margin: 5px 10px;
       text-transform: uppercase;
       text-decoration: none;
-      color: darkblue;
+      color: white;
 
       &:hover {
-        color: deepskyblue;
+        color: darkblue;
       }
     }
 

@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-import {BrowserRouter} from "react-router-dom";
 
-import Header from "../components/Header";
 import Map from "../components/Map";
 import ContactForm from "../components/ContactForm";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Template from "../components/Template";
 
 // const location = {
 //     address: 'Centrum Szkoleniowe ECLEST',
@@ -15,18 +15,21 @@ import ContactForm from "../components/ContactForm";
 
 function Contact() {
     return (
-        <section id="kontakt">
-            <Header/>
-            {/*<Map location={location} zoomLevel={17} />*/}
-            <div className="container">
-                <div class="info">
-                    <ContactForm />
+        <Template>
+            <section id="kontakt">
+                <div className="container">
+                    <div className="info">
+                        <div className="address">ul. Irysowa 7, 00-234 Warszawa
+                        </div>
+                        <div className="phone">123 456 789</div>
+                        <div className="contact">Zapraszamy do kontaktu poprzez formularz:</div>
+                        <ContactForm/>
+                    </div>
+                    <Map/>
                 </div>
-
-                <Map/>
-            </div>
-        </section>
-    )
+            </section>
+        </Template>
+       )
 }
 
 export default Contact;

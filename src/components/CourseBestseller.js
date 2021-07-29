@@ -4,40 +4,39 @@ import {useStaticQuery, graphql} from "gatsby";
 import Button from "./Button";
 
 const CourseBestseller = () => {
-    const {
-        allDatoCmsBestseller: {
-            nodes: data
-        }
-    } = useStaticQuery(graphql`
+        const {
+            allDatoCmsBestseller: {
+                nodes: data
+            }
+        } = useStaticQuery(graphql`
     {
         allDatoCmsBestseller {
         nodes {
                 id
                 date
                 description
-                hasztag
                 name
         }
     }
     }
     `)
-console.log(data);
+        console.log(data);
 
-    return (<div className="course-bestseller">
+        return <>
 
-        {data.map(el => (
-            <>
-                <h2 className="title" key={el.i}>{el.name}</h2>
-                <p key={el.i}>{el.description}</p>
-                <div className="date" key={el.i}>Najbliższe szkolenie: {el.date}</div>
-                <Button key={el.i} href={el.hasztag} text="Zapisz się!"/>
-            </>
+            {data.map(el => (
+                <div key={el.i} className="course-bestseller">
+                    <div className="info"><h2 className="title" key={el.i}>{el.name}</h2>
+                        <p key={el.i}>{el.description}</p></div>
+                    <div className="date" key={el.i}>Najbliższe szkolenie: {el.date}
+                        <Button key={el.i} href="/kalendarz" text="Zapisz się!"/>
+                    </div>
 
-        ))}
+                </div>
 
-
-    </div>);
-};
+            ))}</>
+    }
+;
 
 
 export default CourseBestseller;

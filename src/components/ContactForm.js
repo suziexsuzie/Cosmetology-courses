@@ -22,7 +22,7 @@ class ContactForm extends Component {
         return (
             <>
                 <div>{this.state.error}</div>
-                <form
+                <form className="form"
                     style={{
                         display: `flex`,
                         flexDirection: `column`,
@@ -66,7 +66,7 @@ class ContactForm extends Component {
                         value={this.state.message.body}
                         onChange={this.onChange}/>
 
-                    <button
+                    <button className="button"
                         style={{
                             marginTop: `7px`,
                         }}

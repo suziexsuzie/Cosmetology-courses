@@ -1,0 +1,79 @@
+section.bestsellers {
+  h1 {
+    width: 100%;
+    font-family: var(--main-font);
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: var(--main-color);
+    color: darkblue;
+    margin: 20px 0 40px 0;
+    padding: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .course-bestseller {
+        font-family: var(--main-font);
+        width: 350px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+        box-shadow: 2px 1px 31px -6px rgba(156, 151, 151, 0.71);
+        justify-content: space-between;
+
+        .info {
+          h2 {
+            background-color: var(--sec-color);
+            text-align: center;
+            font-weight: 400;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            padding: 10px;
+            color: darkblue;
+          }
+
+          p {
+            margin: 25px 40px 0 40px;
+            line-height: 25px;
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+
+        .date {
+          font-family: var(--main-font);
+          align-self: center;
+          margin-bottom: 10px;
+
+          a {
+            display: block;
+            margin: 20px auto;
+            padding: 20px 40px;
+            border-radius: 30px;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            &:hover {
+              transform: scale(1.05);
+              transition-duration: 0.5s;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}
