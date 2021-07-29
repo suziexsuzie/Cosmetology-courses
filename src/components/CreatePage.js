@@ -1,6 +1,6 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import {useStaticQuery} from "gatsby";
+// import React from "react"
+// import { Link, graphql } from "gatsby"
+// import {useStaticQuery} from "gatsby";
 
 // export default function CreatePage(props) {
 //     return (
@@ -26,39 +26,39 @@ import {useStaticQuery} from "gatsby";
 //
 
 
-
-
-const pageQuery = graphql`
-    {
-        allDatoCmsAboutcourse {
-            edges {
-                node {
-                    cost
-                    id
-                    practice
-                    slug
-                    terms
-                    title
-                    program
-                }
-            }
-        }
-    }
-`
-
-const MakeNew = () => {
-const {allDatoCmsAboutcourse: {nodes}} = useStaticQuery(pageQuery)
-    return (
-        <div>
-            {nodes.map(({slug, ...product}) => (
-                    <Link key={product.slug} to={`/szkolenia/${slug}`}>
-                        {product.title}
-                    </Link>
-                )
-            )}
-        </div>
-    );
-
-}
-
-export default MakeNew;
+//
+//
+// const pageQuery = graphql`
+//     {
+//         allDatoCmsAboutcourse {
+//             edges {
+//                 node {
+//                     cost
+//                     id
+//                     practice
+//                     slug
+//                     terms
+//                     title
+//                     program
+//                 }
+//             }
+//         }
+//     }
+// `
+//
+// const MakeNew = () => {
+// const {allDatoCmsAboutcourse: {nodes}} = useStaticQuery(pageQuery)
+//     return (
+//         <div>
+//             {nodes.map(({slug, ...product}) => (
+//                     <Link key={product.slug} to={`/szkolenia/${slug}`}>
+//                         {product.title}
+//                     </Link>
+//                 )
+//             )}
+//         </div>
+//     );
+//
+// }
+//
+// export default MakeNew;
